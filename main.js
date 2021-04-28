@@ -2,7 +2,7 @@ var slides, mains;
 
 $(window).ready(function(){
     slides = $('.slide');
-    mains = $('.main, h1');
+    mains = $('.main, .gif-block, h1');
     var getScr = $(document).scrollTop()+$(window).height();
     for(i = 0; i < slides.length; i++){
         if($(slides[i]).offset().top <= getScr){
