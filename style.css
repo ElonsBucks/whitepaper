@@ -1,0 +1,87 @@
+@import url('http://fonts.cdnfonts.com/css/kana-sans');
+@media screen{
+    *{
+    font-family: 'Kana Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+}
+html, body{
+    background: #09142e;
+    width: 100%;
+    height: 100%;
+    font-size: 2.9vw;
+}
+.banner{
+    width: 100%;
+}
+.banner img{
+    display: block;
+    width: 100%;
+}
+.slide{
+    background-image: url('img/slide.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(-100%);
+    transition: transform ease-in-out 0.4s;
+}
+.border{
+    width: 100%;
+    height: 100%;
+    padding: 3% 6%;
+    border: 0.4rem solid;
+    border-image: linear-gradient(rgba(0, 76, 255, 0.5), rgba(0, 76, 255, 0));
+    border-image-slice: 1;
+}
+h1{
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-weight: 800;
+    font-size: 1.8rem;
+    font-family: 'Kana Sans Black', sans-serif;
+}
+.main{
+    display: block;
+    width: 100%;
+    margin-top: 3%;
+    background: linear-gradient(90deg, rgba(14, 45, 112, 0.5), rgba(14, 45, 112, 0));
+    padding: 2%;
+}
+h1, .main{
+    opacity: 0;
+    transition: opacity ease-in-out 0.8s;
+}
+.float-fix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.image-left{
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding: 3%;
+    font-size: 0.8rem;
+}
+.image-left img{
+    width: 100%;
+    margin-bottom: 10%;
+}
+.text-right-block{
+    text-align: right;
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+.color-label{
+    width: 0.5rem;
+    height: 0.5rem;
+    display: inline-block;
+    background: attr(data-color);
+    border: 1px solid black;
+}
